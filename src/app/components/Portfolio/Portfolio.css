@@ -1,0 +1,56 @@
+.Portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: -100px;
+  background: #f7f7f7;
+}
+
+.heading {
+  display: flex;
+  width: 90rem;
+  padding: 3.125rem 7.75rem 8.875rem 7.75rem;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.625rem;
+  background: #ccd2ff;
+  margin-bottom: -6.25rem;
+}
+
+.portHead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex: 1 0 0;
+}
+
+.cardsPortfolio {
+  display: flex;
+  width: 90rem;
+  padding: 0rem 7.75rem 4rem 7.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  align-self: center;
+}
+
+.cardInfo {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  /* align-items: flex-end;
+  align-self: stretch; */
+}
+
+.css-78trlr-MuiButtonBase-root-MuiIconButton-root {
+  display: flex;
+  padding: 0.47081rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4.06088rem;
+  background: #002471;
+}
