@@ -1,15 +1,15 @@
 .Portfolio {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
+  /* justify-content: flex-end;
+  align-items: flex-start; */
   gap: -100px;
   background: #f7f7f7;
 }
 
 .heading {
   display: flex;
-  width: 90rem;
+  /* width: 90rem; */
   padding: 3.125rem 7.75rem 8.875rem 7.75rem;
   justify-content: center;
   align-items: flex-start;

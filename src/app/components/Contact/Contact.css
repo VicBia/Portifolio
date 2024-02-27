@@ -1,0 +1,45 @@
+.Contact {
+  display: flex;
+  /* width: 90rem; */
+  padding: 7.75rem;
+  justify-content: center;
+  align-items: center;
+  gap: 3.75rem;
+  /* flex: 1 0 0; */
+  flex-direction: row;
+}
+
+.Contact .info {
+  display: flex;
+  gap: 3rem;
+  width: 35.375rem;
+  padding: 0;
+  align-self: start;
+}
+
+.contactInfo {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.css-xn6ruc > :not(style) {
+  width: 50ch;
+}
+
+button.send {
+  display: flex;
+  width: 233px;
+  padding: 0.75rem 2.5rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1f1f;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+}

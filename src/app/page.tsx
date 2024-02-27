@@ -4,6 +4,7 @@ import About from "@/app/components/About/About";
 import Services from "@/app/components/Services/Services";
 import Portfolio from "@/app/components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -11,10 +12,17 @@ export default function Home() {
       <div className="blueBack">
         <Cover />
       </div>
-      <About />
+      <div className="blackBack">
+        <About />
+      </div>
       <Services />
       <Portfolio />
-      {/* <Contact /> */}
+      <div className="blueBack">
+        <Contact />
+      </div>
+      <div className="blackBack">
+        <Footer />
+      </div>
     </main>
   );
 }
