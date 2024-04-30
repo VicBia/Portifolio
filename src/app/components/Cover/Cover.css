@@ -59,6 +59,10 @@ nav div {
   flex-direction: row;
 }
 
+.cover img {
+  align-self: center;
+}
+
 .cover h1 {
   width: -webkit-fill-available;
   align-self: center;
@@ -75,7 +79,7 @@ nav div {
 }
 
 .info h1 {
-  justify-content: start;
+  justify-content: flex-start;
   font-size: 3rem;
   line-height: 150%;
   display: flex;
