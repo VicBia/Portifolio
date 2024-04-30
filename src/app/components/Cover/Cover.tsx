@@ -14,11 +14,11 @@ export default function Cover() {
             MICHEL
           </Link>
           <div>
-            <Link href="#About">Sobre</Link>
-            <Link href="#Services">Serviços</Link>
-            <Link href="#Portifolio">Portfolio</Link>
+            <Link href="#about">Sobre</Link>
+            <Link href="#services">Serviços</Link>
+            <Link href="#portifolio">Portifolio</Link>
           </div>
-          <Link href="#Contact" className="contactButton">
+          <Link href="#contact" className="contactButton">
             Contato
           </Link>
         </nav>

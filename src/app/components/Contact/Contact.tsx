@@ -6,7 +6,7 @@ import "./Contact.css";
 
 export default function Contact() {
   return (
-    <section className="Contact">
+    <section className="Contact" id="contact">
       <div className="info">
         <div className="title">
           <h1>Entre em contato</h1>
@@ -32,24 +32,37 @@ export default function Contact() {
       <Box
         component="form"
         sx={{
-          "& > :not(style)": { m: 1, width: "25ch" },
+          "& > :not(style)": { m: 1, minWidth: 0 },
+          maxWidth: "500px",
+          width: "100%",
         }}
         noValidate
         autoComplete="off"
       >
-        <TextField id="outlined-basic" label="Nome" variant="outlined" />
-        <TextField id="outlined-basic" label="Email" variant="outlined" />
+        <TextField
+          id="outlined-basic"
+          label="Nome"
+          variant="outlined"
+          fullWidth
+        />
+        <TextField
+          id="outlined-basic"
+          label="Email"
+          variant="outlined"
+          fullWidth
+        />
         <TextField
           id="outlined-basic"
           label="Número de telefone"
           variant="outlined"
+          fullWidth
         />
         <TextField
           id="outlined-multiline-static"
           label="Sua mensagem"
           multiline
           rows={4}
-          // defaultValue="Default Value"
+          fullWidth
         />
         <button className="send">Enviar mensagem</button>
       </Box>

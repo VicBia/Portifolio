@@ -7,14 +7,14 @@ export default function Footer() {
     <section className="Footer">
       <footer>
         <div>
-          <Link href="#About">Sobre</Link>
-          <Link href="#Services">Serviços</Link>
+          <Link href="#about">Sobre</Link>
+          <Link href="#services">Serviços</Link>
         </div>
-        <Link href="/" className="logo">
+        <Link href="/" className="logoFooter">
           MICHEL
         </Link>
         <div>
-          <Link href="#Portifolio">Portfolio</Link>
+          <Link href="#portifolio">Portfolio</Link>
         </div>
       </footer>
     </section>

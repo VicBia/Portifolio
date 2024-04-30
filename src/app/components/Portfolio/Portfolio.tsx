@@ -11,16 +11,16 @@ import { grey } from "@mui/material/colors";
 import Exemplo from "../../assets/exemplo.png";
 import Image from "next/image"; // Importe o componente Image do Next.js
 
-const caminhoDaImagem = Exemplo.src || Exemplo;
+const caminhoDaImagem = Exemplo;
 
 const color = grey[50];
 
 export default function Portfolio() {
   return (
-    <section className="Portfolio">
+    <section className="Portfolio" id="portifolio">
       <div className="heading">
         <div className="portHead">
-          <h1>Meu Portfolio</h1>
+          <h1>Meu Portifolio</h1>
           <p>
             Explore my design services, from user interface and experience to
             prototyping and testing. Let's craft exceptional digital experiences
@@ -29,12 +29,12 @@ export default function Portfolio() {
         </div>
       </div>
       <div className="cardsPortfolio">
-        <Card sx={{ maxWidth: 354 }}>
-          <CardMedia
-            component="img"
+        <Card sx={{ maxWidth: 300 }}>
+          <Image
+            src={Exemplo}
             alt="projeto 1"
-            height="198"
-            image={caminhoDaImagem}
+            width={300} // ajuste para o tamanho desejado
+            height={200} // ajuste para o tamanho desejado
           />
           <div className="cardInfo">
             <CardContent>
@@ -47,17 +47,17 @@ export default function Portfolio() {
             </CardContent>
             <CardActions>
               <IconButton>
-                <ArrowOutwardOutlinedIcon fontSize="large" htmlColor="white" />
+                <ArrowOutwardOutlinedIcon htmlColor="white" />
               </IconButton>
             </CardActions>
           </div>
         </Card>
-        <Card sx={{ maxWidth: 354 }}>
-          <CardMedia
-            component="img"
+        <Card sx={{ maxWidth: 300 }}>
+          <Image
+            src={Exemplo}
             alt="projeto 1"
-            height="198"
-            image={caminhoDaImagem}
+            width={300} // ajuste para o tamanho desejado
+            height={200} // ajuste para o tamanho desejado
           />
           <div className="cardInfo">
             <CardContent>
@@ -70,17 +70,17 @@ export default function Portfolio() {
             </CardContent>
             <CardActions>
               <IconButton>
-                <ArrowOutwardOutlinedIcon fontSize="large" htmlColor="white" />
+                <ArrowOutwardOutlinedIcon htmlColor="white" />
               </IconButton>
             </CardActions>
           </div>
         </Card>
-        <Card sx={{ maxWidth: 354 }}>
-          <CardMedia
-            component="img"
+        <Card sx={{ maxWidth: 300 }}>
+          <Image
+            src={Exemplo}
             alt="projeto 1"
-            height="198"
-            image={caminhoDaImagem}
+            width={300} // ajuste para o tamanho desejado
+            height={200} // ajuste para o tamanho desejado
           />
           <div className="cardInfo">
             <CardContent>
@@ -93,17 +93,17 @@ export default function Portfolio() {
             </CardContent>
             <CardActions>
               <IconButton>
-                <ArrowOutwardOutlinedIcon fontSize="large" htmlColor="white" />
+                <ArrowOutwardOutlinedIcon htmlColor="white" />
               </IconButton>
             </CardActions>
           </div>
         </Card>
-        <Card sx={{ maxWidth: 354 }}>
-          <CardMedia
-            component="img"
+        <Card sx={{ maxWidth: 300 }}>
+          <Image
+            src={Exemplo}
             alt="projeto 1"
-            height="198"
-            image={caminhoDaImagem}
+            width={300} // ajuste para o tamanho desejado
+            height={200} // ajuste para o tamanho desejado
           />
           <div className="cardInfo">
             <CardContent>
@@ -116,17 +116,17 @@ export default function Portfolio() {
             </CardContent>
             <CardActions>
               <IconButton>
-                <ArrowOutwardOutlinedIcon fontSize="large" htmlColor="white" />
+                <ArrowOutwardOutlinedIcon htmlColor="white" />
               </IconButton>
             </CardActions>
           </div>
         </Card>
-        <Card sx={{ maxWidth: 354 }}>
-          <CardMedia
-            component="img"
+        <Card sx={{ maxWidth: 300 }}>
+          <Image
+            src={Exemplo}
             alt="projeto 1"
-            height="198"
-            image={caminhoDaImagem}
+            width={300} // ajuste para o tamanho desejado
+            height={200} // ajuste para o tamanho desejado
           />
           <div className="cardInfo">
             <CardContent>
@@ -139,17 +139,17 @@ export default function Portfolio() {
             </CardContent>
             <CardActions>
               <IconButton>
-                <ArrowOutwardOutlinedIcon fontSize="large" htmlColor="white" />
+                <ArrowOutwardOutlinedIcon htmlColor="white" />
               </IconButton>
             </CardActions>
           </div>
         </Card>
-        <Card sx={{ maxWidth: 354 }}>
-          <CardMedia
-            component="img"
+        <Card sx={{ maxWidth: 300 }}>
+          <Image
+            src={Exemplo}
             alt="projeto 1"
-            height="198"
-            image={caminhoDaImagem}
+            width={300} // ajuste para o tamanho desejado
+            height={200} // ajuste para o tamanho desejado
           />
           <div className="cardInfo">
             <CardContent>
@@ -162,7 +162,7 @@ export default function Portfolio() {
             </CardContent>
             <CardActions>
               <IconButton>
-                <ArrowOutwardOutlinedIcon fontSize="large" htmlColor="white" />
+                <ArrowOutwardOutlinedIcon htmlColor="white" />
               </IconButton>
             </CardActions>
           </div>
