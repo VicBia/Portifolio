@@ -1,7 +1,7 @@
 .Contact {
   display: flex;
   /* width: 90rem; */
-  padding: 7.75rem;
+  padding: 5.75rem 0;
   justify-content: center;
   align-items: center;
   gap: 3.75rem;
@@ -11,8 +11,8 @@
 
 .Contact .info {
   display: flex;
-  gap: 3rem;
-  width: 35.375rem;
+  gap: 1rem;
+  width: 42.375rem;
   padding: 0;
   align-self: start;
 }
