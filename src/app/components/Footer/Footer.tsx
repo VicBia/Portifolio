@@ -11,7 +11,7 @@ export default function Footer() {
           <Link href="#Services">Serviços</Link>
         </div>
         <Link href="/" className="logo">
-          CAIO
+          MICHEL
         </Link>
         <div>
           <Link href="#Portifolio">Portfolio</Link>

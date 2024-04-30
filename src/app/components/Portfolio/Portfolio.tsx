@@ -8,6 +8,10 @@ import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import ArrowOutwardOutlinedIcon from "@mui/icons-material/ArrowOutwardOutlined";
 import { grey } from "@mui/material/colors";
+import Exemplo from "../../assets/exemplo.png";
+import Image from "next/image"; // Importe o componente Image do Next.js
+
+const caminhoDaImagem = Exemplo.src || Exemplo;
 
 const color = grey[50];
 
@@ -30,7 +34,7 @@ export default function Portfolio() {
             component="img"
             alt="projeto 1"
             height="198"
-            image="/static/images/cards/contemplative-reptile.jpg"
+            image={caminhoDaImagem}
           />
           <div className="cardInfo">
             <CardContent>
@@ -53,7 +57,7 @@ export default function Portfolio() {
             component="img"
             alt="projeto 1"
             height="198"
-            image="/static/images/cards/contemplative-reptile.jpg"
+            image={caminhoDaImagem}
           />
           <div className="cardInfo">
             <CardContent>
@@ -76,7 +80,7 @@ export default function Portfolio() {
             component="img"
             alt="projeto 1"
             height="198"
-            image="/static/images/cards/contemplative-reptile.jpg"
+            image={caminhoDaImagem}
           />
           <div className="cardInfo">
             <CardContent>
@@ -99,7 +103,7 @@ export default function Portfolio() {
             component="img"
             alt="projeto 1"
             height="198"
-            image="/static/images/cards/contemplative-reptile.jpg"
+            image={caminhoDaImagem}
           />
           <div className="cardInfo">
             <CardContent>
@@ -122,7 +126,7 @@ export default function Portfolio() {
             component="img"
             alt="projeto 1"
             height="198"
-            image="/static/images/cards/contemplative-reptile.jpg"
+            image={caminhoDaImagem}
           />
           <div className="cardInfo">
             <CardContent>
@@ -145,7 +149,7 @@ export default function Portfolio() {
             component="img"
             alt="projeto 1"
             height="198"
-            image="/static/images/cards/contemplative-reptile.jpg"
+            image={caminhoDaImagem}
           />
           <div className="cardInfo">
             <CardContent>
