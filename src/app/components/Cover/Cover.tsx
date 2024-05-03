@@ -1,15 +1,46 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import "./Cover.css";
+import { useState } from "react";
 import coverImage from "../../assets/imagecover.svg";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import MenuIcon from "@mui/icons-material/Menu";
+import Drawer from "@mui/material/Drawer";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import Box from "@mui/material/Box";
+import IconButton from "@mui/material/IconButton";
+import CloseIcon from "@mui/icons-material/Close";
 
 const caminhoDaImagem = coverImage.src || "";
 
 export default function Cover() {
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setOpenMenu(!openMenu);
+  };
+
+  const menuItems = [
+    { label: "Sobre", href: "#about" },
+    { label: "Serviços", href: "#services" },
+    { label: "Portfólio", href: "#portfolio" },
+    { label: "Contato", href: "#contact" },
+  ];
+
+  const renderMenuItems = () => {
+    return menuItems.map((item, index) => (
+      <ListItem key={index} style={{ justifyContent: "center" }}>
+        <Link href={item.href}  onClick={toggleMenu}>{item.label}</Link>
+      </ListItem>
+    ));
+  };
+
   return (
     <>
       <section className="coverMain">
@@ -18,15 +49,51 @@ export default function Cover() {
             <Link href="/" className="logo">
               MICHEL
             </Link>
-            <div>
-              <Link href="#about">Sobre</Link>
-              <Link href="#services">Serviços</Link>
-              <Link href="#portifolio">Portifolio</Link>
+            <div className="hide">
+              <div>
+                <Link href="#about">Sobre</Link>
+                <Link href="#services">Serviços</Link>
+                <Link href="#portifolio">Portifolio</Link>
+              </div>
             </div>
-            <Link href="#contact" className="contactButton">
-              Contato
-            </Link>
+            <div className="hide">
+              <Link href="#contact" className="contactButton">
+                Contato
+              </Link>
+            </div>
+            <div className="menuIcon" onClick={toggleMenu}>
+              <MenuIcon />
+            </div>
           </nav>
+          <Drawer anchor="right" open={openMenu} onClose={toggleMenu}>
+            <Box
+              sx={{
+                p: 2,
+                width: "100vw",
+                alignItems: "center",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                height: "100vh",
+                backgroundColor: "#ccd2ff",
+                fontSize: "2rem",
+                fontWeight: 500,
+              }}
+            >
+              <IconButton
+                sx={{
+                  left: "40px",
+                  top: "20px",
+                  position: "absolute",
+               
+                }}
+              >
+                <CloseIcon onClick={toggleMenu} style={{ fontSize: 35 }} />
+              </IconButton>
+
+              <List>{renderMenuItems()}</List>
+            </Box>
+          </Drawer>
         </section>
         <section className="cover">
           <div className="info">
@@ -35,17 +102,9 @@ export default function Cover() {
               Olá, eu sou <b>Michel Gerônimo</b>
             </h1>
             <h3>
-              Engenheiro da computação | Desenvolvedor BackEnd <br /> (Java, Spring,
-              ASP.NET C#, Node.JS)
-              <br />
-              {/*
-    Welcome to my portfolio of captivating digital experiences. Explore
-    my work and let's create something extraordinary together. */}
+              Engenheiro da computação | Desenvolvedor BackEnd <br /> (Java,
+              Spring, ASP.NET C#, Node.JS)
             </h3>
-            {/* <div className="buttons">
-              <button id="hireMe">Hire me</button>
-              <button id="port">Portifólio</button>
-            </div> */}
           </div>
           <Image
             src={caminhoDaImagem}
