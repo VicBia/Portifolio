@@ -9,7 +9,7 @@ import Footer from "./components/Footer/Footer";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className="blueBack">
+      <div className="blueBack" id="column">
         <Cover />
       </div>
       <div className="blackBack">

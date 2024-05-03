@@ -27,10 +27,16 @@
   flex: 1 0 0;
 }
 
+.portHead h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
 .cardsPortfolio {
   display: flex;
-  width: 90rem;
-  padding: 0rem 7.75rem 4rem 7.75rem;
+  max-width: 70rem;
+  width: 100%;
+  padding: 0rem 2.75rem 4rem 2.75rem;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;

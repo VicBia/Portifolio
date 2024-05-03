@@ -43,26 +43,26 @@ export default function Contact() {
           id="outlined-basic"
           label="Nome"
           variant="outlined"
-          fullWidth
+          // fullWidth
         />
         <TextField
           id="outlined-basic"
           label="Email"
           variant="outlined"
-          fullWidth
+          // fullWidth
         />
         <TextField
           id="outlined-basic"
           label="Número de telefone"
           variant="outlined"
-          fullWidth
+          // fullWidth
         />
         <TextField
           id="outlined-multiline-static"
           label="Sua mensagem"
           multiline
           rows={4}
-          fullWidth
+          // fullWidth
         />
         <button className="send">Enviar mensagem</button>
       </Box>
