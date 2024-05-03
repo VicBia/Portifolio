@@ -3,6 +3,7 @@
   flex-direction: column;
   /* background-color: #ccd2ff; */
   max-width: fit-content;
+  align-self: center;
 }
 
 .hero {
@@ -12,7 +13,7 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  gap: 2rem;
+  /* gap: 2rem; */
 }
 
 nav {
@@ -63,6 +64,8 @@ nav div {
   justify-content: center;
   gap: 3rem;
   flex-direction: row;
+  width: 100vw;
+  max-width: 90rem;
 }
 
 .cover img {
@@ -133,4 +136,36 @@ h1 b {
 #port:hover {
   background-color: #1f1f1f;
   color: #fff;
+}
+
+.contactHeader {
+  padding: 25px;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: azure;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.788);
+}
+
+@media (max-width: 1065px) {
+  .cover {
+    padding: 0rem 3.75rem;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 756px) {
+  .cover {
+    flex-flow: wrap;
+    /* padding: 0; */
+  }
+  .info {
+    width: 100%;
+    text-align: center;
+  }
 }

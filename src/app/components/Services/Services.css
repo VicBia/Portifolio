@@ -1,20 +1,22 @@
 .Services {
   display: flex;
-  /* width: 90rem; */
-  padding: 4rem 7.75rem;
+  max-width: 77rem;
+  width: 100%;
+  align-self: center;
+  padding: 4rem 2.75rem;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 2rem;
-  flex: 1 0 0;
 }
 
 .servHead {
   display: flex;
-  width: 50.625rem;
+  max-width: 50.625rem;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
+  width: 100%;
 }
 
 .servHead h1 {
@@ -37,9 +39,13 @@
 
 .cardsServices {
   display: flex;
+  flex-flow: wrap;
   align-items: flex-start;
   gap: 2rem;
   align-self: stretch;
+  max-width: 90rem;
+  width: 100%;
+  align-self: center;
 }
 
 .cardServices {
@@ -48,15 +54,23 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 1.5rem;
-  flex: 1 0 0;
+  flex: 1;
   align-self: stretch;
+  min-width: 155px;
 }
 
 .cardServices p {
-  color:  #1f1f1f;
+  color: #1f1f1f;
   font-family: Montserrat;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 1.3125rem */
+}
+
+@media (max-width: 1200px) {
+  .cover {
+    padding: 0rem 3.75rem;
+    gap: 1rem;
+  }
 }

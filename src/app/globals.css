@@ -12,7 +12,6 @@
   --Medium-Grey: (#E1E1E1);
   --Grey: (#F7F7F7);
   --White: (#FFF);
-
 }
 
 * {
@@ -43,6 +42,10 @@ main {
   width: 100vw;
   display: flex;
   justify-content: center;
+}
+
+#column {
+  flex-direction: column;
 }
 
 .blackBack {

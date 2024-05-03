@@ -1,19 +1,20 @@
 .Contact {
   display: flex;
-  /* width: 90rem; */
+  max-width: 65rem;
+  width: 100%;
   padding: 5.75rem 0;
   justify-content: center;
   align-items: center;
-  gap: 3.75rem;
-  /* flex: 1 0 0; */
+  gap: 2rem;
   flex-direction: row;
 }
 
 .Contact .info {
   display: flex;
   gap: 1rem;
-  width: 42.375rem;
+  max-width: 42.375rem;
   padding: 0;
+  width: 100%;
   align-self: start;
 }
 
@@ -30,6 +31,7 @@ form {
 
 .css-xn6ruc > :not(style) {
   width: 50ch;
+  padding-right: 15px;
 }
 
 button.send {
@@ -42,4 +44,31 @@ button.send {
   color: #fff;
   font-size: 1rem;
   font-weight: 700;
+}
+
+@media (max-width: 1105px) {
+  .Contact {
+    padding: 5.75rem 1rem;
+  }
+}
+
+@media (max-width: 968px) {
+  .css-xlp33h {
+    width: 80%;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 870px) {
+  .Contact {
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+  }
+  .Contact .info {
+    align-self: center;
+  }
+  button {
+    align-self: center;
+  }
 }
