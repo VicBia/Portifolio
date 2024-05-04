@@ -17,15 +17,13 @@ export default function Contact() {
         </div>
         <div className="contactInfo">
           <div className="contacts">
-            <p>+1205 5872 321 </p>
+            <p> (71) 90000 - 0000 </p>
           </div>
           <div className="contacts">
-            <p> contact@sarajonesdesign.com</p>
+            <p> michelgeronimoc@gmail.com</p>
           </div>
           <div className="contacts">
-            <p>
-              1234 Design Street,Creativeville, Webland,Imaginary State, 98765
-            </p>
+            <p> michelgeronimoc@hotmail.com</p>
           </div>
         </div>
       </div>

@@ -7,38 +7,39 @@ export default function Services() {
       <div className="servHead">
         <h1>Serviços</h1>
         <p>
-          Explore my design services, from user interface and experience to
-          prototyping and testing. Let's craft exceptional digital experiences
-          together.
+          Explore meus serviços de desenvolvimento, desde a interface e
+          experiência do usuário até desenvolvimento e testes. Vamos criar
+          experiências digitais excepcionais juntos
         </p>
       </div>
       <div className="cardsServices">
         <div className="cardServices">
-          <h2>Design</h2>
+          <h2>Desenvolvim. Back-End</h2>
           <p>
-            I specialize in web development and design, creating visually
-            appealing, user-friendly digital experiences.
+            Especializo-me no desenvolvimento back-end, criando sistemas
+            robustos e funcionais que alimentam as experiências digitais.
           </p>
         </div>
         <div className="cardServices">
-          <h2>Branding</h2>
+          <h2>Integração de Banco de Dados</h2>
           <p>
-            I'm a branding expert, crafting unique visual identities that tell
-            your story and resonate with your audience.
+            Sei integrar e gerenciar bancos de dados, garantindo que suas
+            aplicações tenham acesso rápido e seguro aos dados.
           </p>
         </div>
         <div className="cardServices">
-          <h2>UX Research</h2>
+          <h2>Otimização de Desempenho</h2>
           <p>
-            I specialize in user experience research, collaborating on web
-            development, and ensuring user-friendly digital products.
+            Foco em otimizar o desempenho das aplicações, garantindo tempos de
+            carregamento rápidos e uma experiência ágil para os usuários.
           </p>
         </div>
         <div className="cardServices">
-          <h2>Usability Testing</h2>
+          <h2>Segurança de Aplicações</h2>
           <p>
-            I perform usability testing and optimize designs websites based on
-            real-user feedback for seamless interactions.
+            Implemento medidas de segurança robustas para proteger suas
+            aplicações de ameaças cibernéticas, mantendo os dados dos usuários
+            seguros.
           </p>
         </div>
       </div>

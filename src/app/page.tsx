@@ -5,6 +5,7 @@ import Services from "@/app/components/Services/Services";
 import Portfolio from "@/app/components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import Tech from "./components/Tech/Tech";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <div className="blackBack">
         <About />
       </div>
+      <Tech />
       <Services />
       <Portfolio />
       <div className="blueBack">

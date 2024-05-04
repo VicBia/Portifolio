@@ -1,0 +1,41 @@
+.containerTech {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: black;
+    gap: 2rem;
+}
+
+.containerTech h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.containerTech h2 {
+    color: #c5c5c5;
+    text-align: center;
+    /* font-size: 1.6rem; */
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.techs {
+    max-width: 80rem;
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    /* align-items: flex-start; */
+    gap: 1rem;
+    /* align-self: stretch; */
+    justify-content: center;
+    align-self: center;
+}
