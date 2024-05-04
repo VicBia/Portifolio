@@ -179,6 +179,9 @@ button:hover {
   .menuIcon {
     display: flex;
   }
+  nav {
+    padding: 1rem 2rem;
+  }
   .hide {
     display: none;
   }
