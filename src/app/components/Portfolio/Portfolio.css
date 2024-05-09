@@ -25,6 +25,7 @@
   align-items: center;
   gap: 1.5rem;
   flex: 1 0 0;
+  max-width: 54rem;
 }
 
 .portHead h1 {
@@ -59,4 +60,10 @@
   align-items: center;
   border-radius: 4.06088rem;
   background: #002471;
+}
+
+@media (max-width: 868px) {
+  .heading {
+    padding: 4.125rem 2.75rem 8.875rem 2.75rem;
+  }
 }

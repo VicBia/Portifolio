@@ -10,24 +10,48 @@ export default function Contact() {
       <div className="info">
         <div className="title">
           <h1>Entre em contato</h1>
-          <p>
+          {/* <p>
             Have a question or a project in mind? I'd love to hear from you.
             Let's chat and make something amazing together.
-          </p>
+          </p> */}
         </div>
         <div className="contactInfo">
           <div className="contacts">
-            <p> (71) 90000 - 0000 </p>
+            <p>
+              <a
+                href="https://wa.me/5571900000000"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                (71) 90000 - 0000
+              </a>
+            </p>
           </div>
           <div className="contacts">
-            <p> michelgeronimoc@gmail.com</p>
+            <p>
+              <a
+                href="mailto:michelgeronimoc@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                michelgeronimoc@gmail.com
+              </a>
+            </p>
           </div>
           <div className="contacts">
-            <p> michelgeronimoc@hotmail.com</p>
+            <p>
+              <a
+                href="mailto:michelgeronimoc@hotmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                michelgeronimoc@hotmail.com
+              </a>
+            </p>
           </div>
         </div>
       </div>
-      <Box
+      {/* <Box
         component="form"
         sx={{
           "& > :not(style)": { m: 1, minWidth: 0 },
@@ -63,7 +87,7 @@ export default function Contact() {
           // fullWidth
         />
         <button className="send">Enviar mensagem</button>
-      </Box>
+      </Box> */}
     </section>
   );
 }
