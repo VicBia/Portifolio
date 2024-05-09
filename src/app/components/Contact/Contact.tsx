@@ -19,11 +19,11 @@ export default function Contact() {
           <div className="contacts">
             <p>
               <a
-                href="https://wa.me/5571900000000"
+                href="https://wa.me/5571999996111"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                (71) 90000 - 0000
+                (71) 99999 - 6111
               </a>
             </p>
           </div>

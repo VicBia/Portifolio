@@ -3,16 +3,13 @@
 import "./Portfolio.css";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 import { grey } from "@mui/material/colors";
-import Exemplo from "../../assets/exemplo.png";
 import Image from "next/image";
 import { CardActionArea } from "@mui/material";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
 import Modal from "@mui/material/Modal";
 import { useState } from "react";
 
