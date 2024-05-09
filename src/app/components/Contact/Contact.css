@@ -12,7 +12,7 @@
 .Contact .info {
   display: flex;
   gap: 1rem;
-  max-width: 42.375rem;
+  max-width: 55.375rem;
   padding: 0;
   width: 100%;
   align-self: start;
@@ -20,8 +20,22 @@
 
 .contactInfo {
   display: flex;
-  gap: 2rem;
-  flex-direction: column;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-content: center;
+}
+
+.title {
+  align-self: center;
+}
+
+.contacts {
+  display: flex;
+  background-color: #585f91;
+  padding: 10px;
+  color: white;
+  font-weight: 500;
 }
 
 form {

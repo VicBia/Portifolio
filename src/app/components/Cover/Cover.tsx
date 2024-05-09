@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import "./Cover.css";
 import { useState } from "react";
-import coverImage from "../../assets/imagecover.svg";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -17,7 +16,7 @@ import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 
-const caminhoDaImagem = coverImage.src || "";
+// const caminhoDaImagem = coverImage.src || "";
 
 export default function Cover() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -36,7 +35,9 @@ export default function Cover() {
   const renderMenuItems = () => {
     return menuItems.map((item, index) => (
       <ListItem key={index} style={{ justifyContent: "center" }}>
-        <Link href={item.href}  onClick={toggleMenu}>{item.label}</Link>
+        <Link href={item.href} onClick={toggleMenu}>
+          {item.label}
+        </Link>
       </ListItem>
     ));
   };
@@ -85,7 +86,6 @@ export default function Cover() {
                   left: "40px",
                   top: "20px",
                   position: "absolute",
-               
                 }}
               >
                 <CloseIcon onClick={toggleMenu} style={{ fontSize: 35 }} />
@@ -107,7 +107,7 @@ export default function Cover() {
             </h3>
           </div>
           <Image
-            src={caminhoDaImagem}
+            src="/assets/imagecover.svg"
             alt="projeto 1"
             width={350}
             height={350}

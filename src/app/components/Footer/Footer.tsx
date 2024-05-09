@@ -6,16 +6,16 @@ export default function Footer() {
   return (
     <section className="Footer">
       <footer>
-        <div>
+        {/* <div>
           <Link href="#about">Sobre</Link>
           <Link href="#services">Serviços</Link>
-        </div>
+        </div> */}
         <Link href="/" className="logoFooter">
           MICHEL
         </Link>
-        <div>
+        {/* <div>
           <Link href="#portifolio">Portfolio</Link>
-        </div>
+        </div> */}
       </footer>
     </section>
   );
